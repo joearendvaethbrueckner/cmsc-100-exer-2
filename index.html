@@ -1,81 +1,109 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <style>
-            .column-flex {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-evenly;
-                text-align: center;
-            }
 
-            .row-flex {
-                display: flex;
-                justify-content: space-evenly;
-                text-align: center;
-                align-items: start;
-                border-radius: 2px;
-                border-color: black;
-            }
-            
-            .header {
-                text-align: center;
-            }
-        </style>
-    </head>
+<head>
+    <style>
+        .column-flex {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
 
-    <body>
-        <div class = "main">
-            <div class = "header">
-                <h1>Logo and Navigation Bar</h1>
-            </div>
+        .row-flex {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: start;
+        }
 
-            <hr />
+        .bordered-col-flex {
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            border: 2px solid #B9B4C7;
+            border-radius: 16px;
+            padding: 4px;
+            margin: 4px;
+            width: 400px;
+        }
 
-            <div class = "column-flex">
-                <h2>Featured Photo</h2>
-                <img src="#" / alt="Featured Photo">
+        .header {
+            text-align: center;
+        }
 
-                <h2>Previous Projects</h2>
-                <div class = "row-flex">
-                    <p>Project 1</p>
-                    <p>Project 2</p>
-                    <p>Project 3</p>
-                    <p>Project 4</p>
-                </div>
+        .footer {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: start;
+        }
 
-                <div class = "row-flex">
-                    <div class = "column-flex">
-                        <h2>Skills</h2>
-                        <div class = "column-flex">
-                            <p>Skill 1</p>
-                            <p>Skill 2</p>
-                            <p>Skill 3</p>
-                        </div>
-                    </div>
+        body {
+            background-color: #352F44;
+            color: #FAF0E6;
+        }
 
-                    <div class = "column-flex">
-                        <h2>Autobiography</h2>
-                        <div class = "column-flex">
-                            <p>
-                                I am Joe-Arend Thomas C. Vaethbrueckner, 21 years old.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        hr {
+            border-color: #5C5470;
+        }
+    </style>
+</head>
 
-            <hr />
+<body>
+    <h1 class="header">Logo and Navigation Bar</h1>
 
-            <div class = "row-flex">
-                <img src = "#" alt = "Footer image" />
-                <div class = "column-flex">
-                    <p>Footer Contents</p>
-                    <p>Logo, Address / Contact Information, and Personal Website</p>
-                    <p>Copyright Information</p>
-                </div>
+    <hr />
+
+    <div class="column-flex">
+        <h2 class="header">Featured Photo</h2>
+        <img style="max-width: 400px;" src="Vaethbrueckner_ID.jpg" / alt="Featured Photo">
+    </div>
+
+    <hr />
+
+    <h2 class="header">Previous Projects</h2>
+
+    <div class="row-flex">
+        <div class="bordered-col-flex">
+            <h3 class="header">CMSC 127</h3>
+            <p>An information system that will allow us to record, in electronic form, data of owed money from friend or group expenses.</p>
+        </div>
+        <div class="bordered-col-flex">
+            <h3 class="header">CMSC 150</h3>
+            <p>Polynomial Regression, Quadratic Spline Interpolation (Generic Solvers), and a Diet Problem (Minimization) using RStudio.</p>
+        </div>
+    </div>
+
+    <hr />
+
+    <div class="row-flex">
+        <div class="bordered-col-flex">
+            <h2 class="header">Skills</h2>
+            <p>Skill 1</p>
+            <p>Skill 2</p>
+            <p>Skill 3</p>
+        </div>
+
+        <div class="bordered-col-flex">
+            <h2 class="header">Autobiography</h2>
+            <div class="column-flex">
+                <p>
+                    I am Joe-Arend Thomas C. Vaethbrueckner, 21 years old, A second year student at UPLB taking up BS Computer Science. I was originally admitted to UP Baguio (BS Computer Science), however I decided to transfer to UPLB since it was closer to my home and it was also my first choice. I took 1 as a BS Statistics student in UPLB, and after, I applied for shifting to BS Computer Science since it is my first choice.
+                </p>
             </div>
         </div>
-    </body>
+    </div>
+
+    <hr />
+
+    <div class="footer">
+        <img src="#" alt="Footer image" />
+        <div class="column-flex">
+            <p>Footer Contents</p>
+            <p>Logo, Address / Contact Information, and Personal Website</p>
+            <p>Copyright Information</p>
+        </div>
+    </div>
+</body>
+
 </html>
